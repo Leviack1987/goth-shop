@@ -1,0 +1,195 @@
+body{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.main_choices ul{
+    display: flex;
+    gap:40px;
+    padding:10px 50px;
+    justify-content: flex-end;
+    list-style-type: none;
+    
+}
+
+.main_choices ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.main_choices ul li a:visited{
+    color: white;
+}
+.main_choices ul li a:hover{
+    color: gray;
+}
+
+.fundamentals_main{
+    display: flex;
+    gap:50px;
+    padding:40px 250px;
+     font-family: 'UnifrakturCook', cursive;
+     
+}
+
+.main-item img{
+    width: 100%;
+    height: auto;
+}
+.main-item img:hover{
+    transform: scale(1.05);
+    filter: brightness(60%);
+    transition: 0.3s ease;
+}
+.hover-message{
+    opacity:0;
+}
+.main-item:hover .hover-message{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+}
+
+
+
+
+
+.main-popular{
+    font-size: 90px;
+    font-family: 'UnifrakturCook',cursive;
+    padding: 70px 20px;
+}
+
+.popular-items{
+    font-family: 'UnifrakturCook',cursive;
+    display: flex;
+    
+    justify-content: center;
+    gap:30px;
+    text-align: center;
+    
+    
+}
+.popular-items a{
+    text-decoration: none;
+    color: white;
+}
+.popular-items a:visited{
+    color: white;
+}
+.popular-items a:hover{
+    transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+.popItem img{
+ border-radius: 9px;
+}
+
+
+
+
+.deals-title{
+    font-size: 90px;
+    font-family: 'UnifrakturCook',cursive;
+}
+.title-choices{
+    font-size: 50px;
+    font-family: 'UnifrakturCook',cursive;
+}
+.deals-items{
+    display: flex;
+    gap: 40px;
+    padding: 0px 30px;
+    font-family: 'UnifrakturCook',cursive;
+    text-align: center;
+    
+}
+.deals-items a{
+    text-decoration: none;
+    color: white;
+}
+.deals-items a:visited{
+    text-decoration: none;
+    color: white;
+}
+.deals-items a:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2)
+}
+.dealItem img{
+    border-radius: 9px;
+    width: 300px;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #fff; }
+    50% { box-shadow: 0 0 15px #9b59b6; }
+    100% { box-shadow: 0 0 5px #fff; }
+}
+
+.main-item:hover {
+    animation: pulseGlow 1s infinite alternate;
+}
+
+
+
+
+
+
+
+.title-buy{
+    font-family: 'UnifrakturCook',cursive;
+    font-size: 100px;
+    
+}
+.price-buy{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.img-main{
+    padding: 0px 90px;
+}
+
+.buy-main{
+    display: flex;
+    justify-content: center;
+}
+.add-to-cart{
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 114px;
+    font-size: 18px;
+    border-radius: 8px;
+    
+}
+.add-to-cart:hover{
+    background-color: #9e9c9c;
+    transition: 0.4s;
+}
+
+
+.quantity-selector {
+
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.qty-btn {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    
+    background-color: rgb(160, 160, 160);
+    cursor: pointer;
+}
+#quantity {
+    width: 60px;
+    text-align: center;
+    font-size: 18px;
+    padding: 6px;
+}

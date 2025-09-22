@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Goth Shop</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="buy-main">
+        <div class="img-main">
+            <img src="../deal items/deals13.jpg" alt="" width="600px" height="700px">         
+        </div>
+        <div class="choices-buy">
+            <h1 class="title-buy">Gothic Cross Shirt</h1>
+            <h3 class="price-buy">$29.99</h3>
+            <div class="quantity-selector">
+                <button class="qty-btn" onclick="decreaseQty()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="qty-btn" onclick="increaseQty()">+</button>
+            </div>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+        
+        
+    </div>
+    <script>
+        function decreaseQty() {
+            let qty = document.getElementById("quantity");
+            if (qty.value > 1) qty.value--;
+        }
+
+        function increaseQty() {
+            let qty = document.getElementById("quantity");
+            qty.value++;
+        }
+    </script>
+    
+</body>
+</html>
